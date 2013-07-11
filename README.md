@@ -15,7 +15,9 @@ $ npm install -g ember-tools
 Add this line to your application's Gemfile:
 
 ``` ruby
-gem 'guard-embertools'
+group :development do
+  gem 'guard-embertools'
+end
 ```
 
 And then execute:
@@ -28,6 +30,12 @@ Or install it yourself as:
 
 ```
 $ gem install guard-embertools
+```
+
+Add a default configuration to your guardfile:
+
+```
+$ guard init embertools
 ```
 
 ## Usage
@@ -47,7 +55,7 @@ end
 
 This guard shows how to send in the command line arguments for `ember build`.  See
 ``` ruby
-guard :embertools, debug: true, no_cleanup: true, out_file: '/my/custom/location.js'  do
+guard :embertools, debug: true, no_cleanup: true, out_file: 'my/custom/location.js'  do
   watch(%r{^public\/javascripts\/(?!index\.js)(?!templates\.js)(?!application\.js).*})
 end
 ```
