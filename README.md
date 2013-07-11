@@ -1,4 +1,4 @@
-# Guard::Embertools
+# Guard::EmberTools
 
 Ember tools guard automatically rebuilds the Ember
 application.js file when ember files are modified using
