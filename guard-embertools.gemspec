@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["brad@instructure.com"]
   spec.description   = 'Guard::EmberTools automatically recompiles the ember application when changes are made'
   spec.summary       = 'Guard gem for ember tools'
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/wbhumphrey/guard-embertools"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
